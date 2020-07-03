@@ -1,153 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="hamburger hamburger--js">☰</button> 
+    <nav class="navigation navigation--js navigation--hidden">
+        <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="index.html">Strona główna</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="equipment.html">Mój sprzęt</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="equipment.html">Mój sprzęt</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="equipment.html">Mój sprzęt</a></li>
+        </ul>
+    </nav>
+    <main class="site">
+        <header class="header" id="header">
+            <h1 class="header__title">Łączy nas gra</h1>
+        </header>   
+        <section class="descripton">
+            <h2 class="descripton__header">Poznaj świat gier</h2>
+            <p class="description__content">Witaj podróżniku. Przed wyruszeniem w drogę.. (to jeszcze nie ta kwestia). Zostań z nami żeby dowiedzieć się jak przyjemnie zmarnować czas. Nie posiadasz najmocniejszej maszyny potrafiącej okiełznać najnowsze tytuły w jakoci Ultra? Podejdź do tematu w inny sposób. Graj w te gry na które pozwala Ci Twój sprzęt. Tak zrobiłem ja przechodząc różne gry według daty wydania skupiając się na tych które uznałem za godne uznania. W ten sposób mogłem poczuć w jaki sposób zmieniał się branża gier na przestrzeni lat. Zanim doszedłem do gier wydawanych obecnie mój sprzęt się zmienił na lepszy... a sorry jeszcze nie doszedełm bo trochę tego jest.<span>Zapraszamy</span></p>
+        </section>
+        
+        <section class="games">
+            <h2 class="games__header">2019</h2>
+            <div class="games__container">
+                <article class="game">
+                    <h3 class="game__header">Death Stranding</h3>
+                    <img class="game__foto" src="../assets/img/deathstranding.jpg" alt="game foto">
+                    <p class="game__content">Od tego wsystko się zaczeło. Może nie jest to RDR2 ale potrafi przykuć uwagę na dłuższą chwilę</p>
+                </article>
+                <article class="game">
+                    <h3 class="game__header">Incubation</h3>
+                    <img src="../assets/img/deathstranding.jpg" alt="game foto">
+                    <p class="game__content">Pamietam</p>
+                </article>
+            </div>
+        </section>
+        <section class="games">
+            <h2 class="games__header">1998</h2>
+            <div class="games__container">
+                <article class="game">
+                    <h3 class="game__header">Outlaws</h3>
+                    <img src="../assets/img/deathstranding.jpg" alt="game foto">
+                    <p class="game__content">Od tego wsystko się zaczeło. Może nie jest to RDR2 ale potrafi przykuć uwagę na dłuższą chwilę</p>
+                </article>
+                <article class="game">
+                    <h3 class="game__header">Incubation</h3>
+                    <img src="../assets/img/deathstranding.jpg" alt="game foto">
+                    <p class="game__content">Pamietam</p>
+                </article>
+                <article class="game">
+                    <h3 class="game__header">Incubation</h3>
+                    <img src="../assets/img/deathstranding.jpg" alt="game foto">
+                    <p class="game__content">Pamietam</p>
+                </article>
+            </div>
+        </section>
+        <section class="games">
+            <h2 class="games__header">1998</h2>
+            <div class="games__container">
+                <article class="game">
+                    <h3 class="game__header">Outlaws</h3>
+                    <img src="../assets/img/deathstranding.jpg" alt="game foto">
+                    <p class="game__content">Od tego wsystko się zaczeło. Może nie jest to RDR2 ale potrafi przykuć uwagę na dłuższą chwilę</p>
+                </article>
+                <article class="game">
+                    <h3 class="game__header">Incubation</h3>
+                    <img src="../assets/img/deathstranding.jpg" alt="game foto">
+                    <p class="game__content">Pamietam</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__content">Strona domowa. <a href="#header">Wróc na górę</a></p>
+    </footer>
 
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-  </head>
-  <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
-  </body>
+    <script src="scripts/script.js"></script>
+</body>
 </html>
